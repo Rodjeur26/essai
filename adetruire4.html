@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style">
+        div.top-pict {
+            width: 100%;
+        }
+        
+        body {
+            font-family: 'KomiRegular';
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        h1 {
+            font-size: 120px;
+            font-weight: normal;
+        }
+        
+        h2 {
+            font-weight: normal;
+            color: red;
+        }
+        
+        h3 {
+            color: green;
+            font-weight: normal;
+        }
+        
+        div rogerimage {
+            background-size: 50%;
+        }
+        
+        div.effet1 {
+            background-size: 150%;
+            transition: 1s background-size;
+        }
+        
+        div.effet1:hover {
+            background-size: 200%;
+        }
+        
+        div.image_effet1 {
+            display: inline-block;
+            vertical-align: middle;
+            webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            webkit-transition-property: transform;
+            transition-property: transform;
+        }
+        
+        div.image_effet1:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        /* Bounce Out */
+        
+        div.hvr-bounce-out {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        div.hvr-bounce-out:hover,
+        div.hvr-bounce-out:focus,
+        div.hvr-bounce-out:active {
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+            transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        }
+        
+        div.hvr-pulse-grow {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+        }
+        
+        div.hvr-pulse-grow:hover,
+        div.hvr-pulse-grow:focus,
+        div.hvr-pulse-grow:active {
+            -webkit-animation-name: hvr-pulse-grow;
+            animation-name: hvr-pulse-grow;
+            -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+    </style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            background-color: rgba(255, 255, 255, 0.9529411764705882);
+        }
+        
+        .silex-id-1518680603535-1 {
+            width: 1094px;
+            background-color: transparent;
+            min-height: 810px;
+            top: -192px;
+            left: 0px;
+            background-image: url('yourte2.png');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .silex-id-1518683336964-5 {
+            width: 875px;
+            background-color: transparent;
+            min-height: 1446px;
+            top: -5px;
+            left: 144px;
+        }
+        
+        .silex-id-1518689106992-7 {
+            width: 192px;
+            min-height: 29px;
+            top: 694px;
+            left: 54px;
+        }
+        
+        .silex-id-1518689142529-8 {
+            width: 437px;
+            min-height: 271px;
+            top: 701px;
+            left: 270px;
+        }
+        
+        .silex-id-1518689267713-9 {
+            width: 209px;
+            min-height: 263px;
+            top: 768px;
+            left: 23px;
+        }
+        
+        .silex-id-1518690096987-10 {
+            width: 100%;
+            top: 1052px;
+            left: -136px;
+            background-color: rgb(255, 255, 255);
+            min-height: 337px;
+            background-image: url('yourte2.png');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .silex-id-1518683469290-6 {
+            width: 875px;
+            min-height: 310px;
+            top: 74px;
+            left: -1px;
+        }
+        
+        .silex-id-1518691286277-5 {
+            width: 602px;
+            min-height: 229px;
+            top: 749px;
+            left: 252px;
+        }
+        
+        .silex-id-1518690945207-2 {
+            width: 207px;
+            min-height: 69px;
+            top: 645px;
+            left: 50px;
+        }
+        
+        .silex-id-1518690901144-1 {
+            width: 172px;
+            min-height: 239px;
+            top: 729px;
+            left: 40px;
+        }
+        
+        .silex-id-1518691213886-4 {
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            min-height: 1000px;
+            top: 1000px;
+            left: 0px;
+            background-image: url('Ecran2.png');
+            background-size: cover;
+        }
+        
+        .silex-id-1518691552377-7 {
+            width: 230px;
+            background-color: rgb(255, 255, 255);
+            min-height: 230px;
+            top: 150px;
+            left: 159px;
+            background-image: url('boat.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .silex-id-1518691613715-9 {
+            width: 230px;
+            background-color: rgb(255, 255, 255);
+            min-height: 230px;
+            top: 150px;
+            left: 455px;
+            background-image: url('duck.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .silex-id-1518691699881-10 {
+            width: 230px;
+            background-color: rgb(255, 255, 255);
+            min-height: 230px;
+            top: 150px;
+            left: 779px;
+            background-image: url('goat.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .silex-id-1518691859471-11 {
+            width: 330px;
+            min-height: 98px;
+            top: 37px;
+            left: 189px;
+        }
+    </style>
+    <title></title>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,0.9529411764705882)"},"silex-id-1474394621032-2":{"min-height":"576px","background-color":"transparent","width":"1200px","top":"15px","left":"100px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px","background-image":"url('yourte2.png')","left":"0px","top":"0px"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1518680603535-1":{"width":"1094px","background-color":"transparent","min-height":"810px","top":"-192px","left":"0px","background-image":"url('yourte2.png')","background-size":"cover","background-position":"center center"},"silex-id-1518683336964-5":{"width":"875px","background-color":"transparent","min-height":"1446px","top":"-5px","left":"144px"},"silex-id-1518683469290-6":{"width":"875px","min-height":"310px","top":"74px","left":"-1px"},"silex-id-1518689106992-7":{"width":"192px","min-height":"29px","top":"694px","left":"54px"},"silex-id-1518689142529-8":{"width":"437px","min-height":"271px","top":"701px","left":"270px"},"silex-id-1518689267713-9":{"width":"209px","min-height":"263px","top":"768px","left":"23px"},"silex-id-1518690096987-10":{"width":"100%","top":"1052px","left":"-136px","background-color":"rgb(255, 255, 255)","min-height":"337px","background-image":"url('yourte2.png')","background-size":"cover","background-position":"center center"},"silex-id-1518690901144-1":{"width":"172px","min-height":"239px","top":"729px","left":"40px"},"silex-id-1518690945207-2":{"width":"207px","min-height":"69px","top":"645px","left":"50px"},"silex-id-1518691213886-4":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"1000px","top":"1000px","left":"0px","background-image":"url('Ecran2.png')","background-size":"cover"},"silex-id-1518691286277-5":{"width":"602px","min-height":"229px","top":"749px","left":"252px"},"silex-id-1518691552377-7":{"width":"230px","background-color":"rgb(255, 255, 255)","min-height":"230px","top":"150px","left":"159px","background-image":"url('boat.jpg')","background-size":"cover","background-position":"center center"},"silex-id-1518691613715-9":{"width":"230px","background-color":"rgb(255, 255, 255)","min-height":"230px","top":"150px","left":"455px","background-image":"url('duck.jpg')","background-size":"cover","background-position":"center center"},"silex-id-1518691699881-10":{"width":"230px","background-color":"rgb(255, 255, 255)","min-height":"230px","top":"150px","left":"779px","background-image":"url('goat.jpg')","background-size":"cover","background-position":"center center"},"silex-id-1518691859471-11":{"width":"330px","min-height":"98px","top":"37px","left":"189px"}},"mobile":{},"componentData":{}}]
+    </script>
+
+
+
+
+
+
+    <meta name="website-width" content="1200">
+    <style type="text/css" class="silex-style-settings">
+        .website-width {
+            width: 1200px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-page-1 {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/komi" type="text/css" />
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body data-silex-id="body-initial" class="body-initial silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-id="silex-id-hamburger-menu">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
+                class="silex-element-content">
+        </div>
+
+        <a id="page-page-1" data-silex-type="page" class="page-element page-link-active">Page 1</a><a id="page-page2" data-silex-type="page" class="page-element">page2</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="editable-style silex-id-1518680603535-1 container-element top-pict" data-silex-id="silex-id-1518680603535-1" style=""></div>
+    <div data-silex-type="container" class="editable-style silex-id-1518683336964-5 container-element effet1" data-silex-id="silex-id-1518683336964-5" style="">
+        <div data-silex-type="text" class="editable-style silex-id-1518689106992-7 text-element page-page2 paged-element" data-silex-id="silex-id-1518689106992-7" style="">
+            <div class="silex-element-content normal">A propos de moi<br></div>
+        </div>
+        <div data-silex-type="text" class="editable-style silex-id-1518689142529-8 text-element page-page2 paged-element" data-silex-id="silex-id-1518689142529-8" style="">
+            <div class="silex-element-content normal">
+                <h3 class="heading3">La pratique de psychanalyste est fondée sur la reconnaissance d'une formation théorique et clinique, au sein d'une école de <a href="https://fr.wikipedia.org/wiki/Psychanalyse" title="Psychanalyse">psychanalyse</a>, à laquelle le psychanalyste
+                    reste en règle générale affilié au-delà de sa formation. Le titre de psychanalyste n'est pas un titre protégé, toutefois, avoir soi-même fait une <a href="https://fr.wikipedia.org/wiki/Cure_psychanalytique" title="Cure psychanalytique">cure psychanalytique</a>                    est le prérequis essentiel pour commencer une formation dans le cadre d'une association psychanalytique.</h3>
+            </div>
+        </div>
+        <div data-silex-type="image" class="editable-style silex-id-1518689267713-9 image-element page-page2 paged-element" data-silex-id="silex-id-1518689267713-9" style=""><img src="Mag.png" class="silex-element-content"></div>
+        <div data-silex-type="container" class="editable-style silex-id-1518690096987-10 container-element page-page2 paged-element top-pict" data-silex-id="silex-id-1518690096987-10" style=""></div>
+        <div data-silex-type="text" class="editable-style silex-id-1518683469290-6 text-element top-pict" data-silex-id="silex-id-1518683469290-6" style="">
+            <div class="silex-element-content normal">
+                <h1 class="heading1" style="text-align: center;"><span style="color: rgb(159, 197, 232);">Magali</span></h1>
+            </div>
+        </div>
+
+        <div data-silex-type="text" class="editable-style silex-id-1518691286277-5 text-element page-page-1 paged-element hvr-pulse-grow" data-silex-id="silex-id-1518691286277-5" style="">
+            <div class="silex-element-content normal">La pratique de psychanalyste est fondée sur la reconnaissance d'une formation théorique et clinique, au sein d'une école de <a href="https://fr.wikipedia.org/wiki/Psychanalyse" title="Psychanalyse">psychanalyse</a>, à laquelle le psychanalyste
+                reste en règle générale affilié au-delà de sa formation. Le titre de psychanalyste n'est pas un titre protégé, toutefois, avoir soi-même fait une <a href="https://fr.wikipedia.org/wiki/Cure_psychanalytique" title="Cure psychanalytique">cure psychanalytique</a>                est le prérequis essentiel pour commencer une formation dans le cadre d'une association psychanalytique.</div>
+        </div>
+        <div data-silex-type="text" class="editable-style silex-id-1518690945207-2 text-element page-page-1 paged-element hvr-bounce-out" data-silex-id="silex-id-1518690945207-2" style="">
+            <div class="silex-element-content normal">
+                <h2 class="heading2">A propos de moi</h2>
+            </div>
+        </div>
+        <div data-silex-type="image" class="editable-style silex-id-1518690901144-1 image-element page-page-1 paged-element image_effet1" data-silex-id="silex-id-1518690901144-1" style=""><img src="Mag.png" class="silex-element-content"></div>
+    </div>
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="editable-style silex-id-1518691213886-4 container-element page-page-1 paged-element top-pict" data-silex-id="silex-id-1518691213886-4" style="">
+        <div data-silex-type="container" class="editable-style silex-id-1518691552377-7 container-element effet1" data-silex-id="silex-id-1518691552377-7" style=""></div>
+        <div data-silex-type="container" class="editable-style silex-id-1518691613715-9 container-element effet1" data-silex-id="silex-id-1518691613715-9" style=""></div>
+        <div data-silex-type="container" class="editable-style silex-id-1518691699881-10 container-element effet1" data-silex-id="silex-id-1518691699881-10" style=""></div>
+        <div data-silex-type="text" class="editable-style text-element silex-id-1518691859471-11" data-silex-id="silex-id-1518691859471-11" style="">
+            <div class="silex-element-content normal">
+                <h2 class="heading2">Un peu d'images!<br></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
