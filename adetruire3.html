@@ -71,6 +71,26 @@
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
         }
+        /* Bounce Out */
+        
+        div.hvr-bounce-out {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        div.hvr-bounce-out:hover,
+        div.hvr-bounce-out:focus,
+        div.hvr-bounce-out:active {
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+            transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        }
     </style>
     <script type="text/javascript" class="silex-script"></script>
     <style class="silex-inline-styles" type="text/css">
@@ -316,7 +336,7 @@
             <div class="silex-element-content normal">La pratique de psychanalyste est fondée sur la reconnaissance d'une formation théorique et clinique, au sein d'une école de <a href="https://fr.wikipedia.org/wiki/Psychanalyse" title="Psychanalyse">psychanalyse</a>, à laquelle le psychanalyste
                 reste en règle générale affilié au-delà de sa formation. Le titre de psychanalyste n'est pas un titre protégé, toutefois, avoir soi-même fait une <a href="https://fr.wikipedia.org/wiki/Cure_psychanalytique" title="Cure psychanalytique">cure psychanalytique</a>                est le prérequis essentiel pour commencer une formation dans le cadre d'une association psychanalytique.</div>
         </div>
-        <div data-silex-type="text" class="editable-style silex-id-1518690945207-2 text-element page-page-1 paged-element" data-silex-id="silex-id-1518690945207-2" style="">
+        <div data-silex-type="text" class="editable-style silex-id-1518690945207-2 text-element page-page-1 paged-element hvr-bounce-out" data-silex-id="silex-id-1518690945207-2" style="">
             <div class="silex-element-content normal">
                 <h2 class="heading2">A propos de moi</h2>
             </div>
